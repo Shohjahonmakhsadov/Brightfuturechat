@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
+const PORT = process.env.port || 3000;
 
 // Ruxsat etilgan emaillar ro'yxati
 const ALLOWED_EMAILS = [
